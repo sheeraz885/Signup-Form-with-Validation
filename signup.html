@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merienda:wght@300..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+    <div class="pannel">
+        <form action="" onsubmit="submission(event)"> 
+            <h1>SignUp</h1>
+            
+            <!-- Full Name -->
+            <label for="FullName"><b>Full Name</b>  </label>
+            <input type="text" name="FullName" id="name" placeholder="Full Name" oninput="check(event, 'name')"><br>
+            <span id="errorName" ></span>   
+            
+            <!-- Email -->
+            <label for="Gmail"><b>Email Address</b> </label>
+            <input type="text" name="Email" id="email" placeholder="Email" oninput="check(event, 'email')"><br>
+            <span id="errorEmail" ></span>     
+            
+            <!-- Mobile Number -->
+            <label for="Mobile"><b>Mobile</b></label>
+            <input type="text" name="Mobile" id="mobile" placeholder="Mobile Number" oninput="check(event, 'number')"><br>
+            <span id="errorMobile" ></span>     
+            
+            <!-- City Selection -->
+            <label for="City"><b>City</b></label>
+            <select name="City" id="city">
+                <option value="Select City" selected>Select City</option> 
+                <option value="Karachi">Karachi</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Quetta">Quetta</option>
+            </select>
+            <br>
+            <span id="errorCity" ></span>   
+            
+            <!-- Gender Selection -->
+            <label for="Gender" id="gender1">Gender: 
+                <input type="radio" name="gender" value="Male" id="radio">Male
+                <input type="radio" name="gender" value="Female" id="radio">Female
+                <input type="radio" name="gender" value="Other" id="radio">Other
+            </label>
+            <span id="errorGender"></span> 
+            
+            <!-- Password -->
+            <label for="Password"><b>Password</b>  </label>
+            <input type="password" name="Password" id="password" placeholder="Password" oninput="check(event, 'password')"> <br>
+            <span id="errorPassword" ></span>     
+            
+           
+            
+            <input type="submit" name="Signup" value="Signup" id="button">
+        </form>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
